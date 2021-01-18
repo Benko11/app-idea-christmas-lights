@@ -10,7 +10,7 @@ interface Props {
 
 const SpeedSetter = (props: Props) => {
     const { onChange } = props;
-    const { on, range, duration } = useContext(LightContext);
+    const { on, range } = useContext(LightContext);
     return (
         <div className={`speed-setter-container ${on ? "" : "off"}`}>
             <div className="icon-container">

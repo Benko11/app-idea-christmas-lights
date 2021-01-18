@@ -5,11 +5,19 @@ const Credits = () => {
     return (
         <div className="credits">
             Icons adapted from{" "}
-            <a href="https://icons.getbootstrap.com/" target="_blank">
+            <a
+                href="https://icons.getbootstrap.com/"
+                target="_blank"
+                rel="noreferrer"
+            >
                 Bootstrap
             </a>{" "}
             and{" "}
-            <a href="https://www.flaticon.com/authors/freepik" target="_blank">
+            <a
+                href="https://www.flaticon.com/authors/freepik"
+                target="_blank"
+                rel="noreferrer"
+            >
                 Freepik
             </a>
         </div>
