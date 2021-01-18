@@ -1,0 +1,109 @@
+:root {
+    --lightSize: 50px;
+    --red: #ff4b39;
+    --green: #2ecc71;
+    --yellow: #f1c40f;
+    --blue: #64fcfe;
+    --duration: 2.5;
+}
+
+.light {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100px;
+    background: #000;
+    margin: 0 10px;
+}
+
+.red {
+    background: var(--red);
+}
+
+.light.red:not(.off) {
+    animation: animateRedStuff calc(var(--duration) * 1s) ease-in infinite;
+}
+
+.yellow {
+    background: var(--yellow);
+}
+
+.light.yellow:not(.off) {
+    animation: animateYellowStuff calc(var(--duration) * 1s) ease-in infinite;
+}
+
+.green {
+    background: var(--green);
+}
+
+.light.green:not(.off) {
+    animation: animateGreenStuff calc(var(--duration) * 1s) ease-in infinite;
+}
+
+.blue {
+    background: var(--blue);
+}
+
+.light.blue:not(.off) {
+    animation: animateBlueStuff calc(var(--duration) * 1s) ease-in infinite;
+}
+
+.off {
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.hanger {
+    width: 1.5rem;
+    height: 2rem;
+    margin: 0 auto;
+}
+
+.hanging-on {
+    background: rgb(100, 100, 100);
+    height: 90%;
+    border-radius: 5px 5px 0 0;
+}
+
+.meeting-point {
+    background: rgb(90, 90, 90);
+    height: 10%;
+    border-radius: 0 0 5px 5px;
+}
+
+@keyframes animateRedStuff {
+    0% {
+        box-shadow: 0 0 0 var(--red);
+    }
+
+    50% {
+        box-shadow: 0 0 var(--lightSize) var(--red);
+    }
+}
+
+@keyframes animateYellowStuff {
+    0% {
+        box-shadow: 0 0 0 var(--yellow);
+    }
+    50% {
+        box-shadow: 0 0 var(--lightSize) var(--yellow);
+    }
+}
+
+@keyframes animateGreenStuff {
+    0% {
+        box-shadow: 0 0 0 var(--green);
+    }
+
+    50% {
+        box-shadow: 0 0 var(--lightSize) var(--green);
+    }
+}
+
+@keyframes animateBlueStuff {
+    0% {
+        box-shadow: 0 0 0 var(--blue);
+    }
+
+    50% {
+        box-shadow: 0 0 var(--lightSize) var(--blue);
+    }
+}

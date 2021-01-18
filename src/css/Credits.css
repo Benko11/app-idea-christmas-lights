@@ -1,0 +1,8 @@
+.credits {
+    font-size: 70%;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    text-align: center;
+}

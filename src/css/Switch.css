@@ -1,0 +1,40 @@
+.switch {
+    background: rgb(50, 50, 50);
+    border: 1px solid rgb(90, 90, 90);
+    border-radius: 5px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.25rem;
+}
+
+.button {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.button:first-child {
+    margin-bottom: 0.5rem;
+}
+
+.button.button-on {
+    background: hsl(100, 50%, 50%);
+    border: 2px solid hsl(100, 50%, 70%);
+}
+
+.button.button-off {
+    background-color: hsl(0, 50%, 50%);
+    border: 2px solid hsl(0, 50%, 70%);
+}
+
+.button.button-inactive {
+    opacity: 0.3;
+}
